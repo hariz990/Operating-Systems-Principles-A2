@@ -1,0 +1,36 @@
+#HOW TO RUN THE PROGRAM#
+
+Step 1
+Copy and paste all the files into a folder or simply copy and paste the folder in a directory
+
+Step 2 
+cd into the directory where the folder is 
+
+Step 3. To compile the code, run this command: make
+
+Step 4. To run the program, run one of the command options
+
+Option 1: 
+./allocate firstfit
+
+Option 2: 
+./allocate bestfit
+
+Option 3: 
+./allocate worstfit
+
+
+#EXTRA NOTES#
+
+names.txt contains a large value of names to test the program, to add a new experiment file open Main.cpp file, 
+go to line 6, you should see this: 
+
+/* PROGRAM SETTINGS */
+const int THREADS_VALUE = 8;		//number of threads 
+int dataLength = 200;			//amount of data each thread allocates
+std::string file_name = "names.txt";	//name of text file
+
+You can change the value of threads from 1-20; Data length is the number of data each thread allocates;
+file_name is where you can replace a new experiment file between the quotations. Do not forget to include 
+the text file inside the folder where the code is. Recompile and re run the program.
+
